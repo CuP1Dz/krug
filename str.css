@@ -1,0 +1,441 @@
+html { overflow-x: hidden; }
+body{
+    
+    margin: auto;
+}
+
+header {
+    justify-content: center;
+    display: block;
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Верхняя часть шапки */
+.header_top {
+    display: flex;
+    max-width: 1920px;
+    justify-content: flex-start;
+		align-items: center;
+    box-shadow: 1px 8px 10px rgba(236, 233, 233, 0.884);
+}
+
+.logo img {
+    width: 390px;
+    height: 71px;
+}
+
+.logo2 {
+    display: none;
+}
+
+/* левая часть верхнего блока шапки */
+.block_left {
+    width: 960px;
+    height: 123px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.block_left img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-left: 150px;
+}
+
+/* правая часть верхнего блока шапки */
+.block_right {
+    display: flex;
+    width: 960px;
+    height: 123px;
+    /* border: 1px solid rgb(0, 0, 0); */
+
+}
+
+.block_r_text {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 70px;
+    color: #2E4555;
+    padding-left: 185px;
+    padding-right: 150px;
+}
+
+.icons {
+    display: flex;
+    padding-left: 28px;
+    /* margin: auto; */
+}
+
+.icon_VK {
+    padding-right: 20px;
+    margin: auto;
+}
+
+.icon_OK {
+    margin: auto;
+}
+
+
+
+
+/* Нижняя часть шапки */
+.header_down {
+    display: flex;
+    width: 1920px;
+    /* border: 1px solid black; */
+    height: 83px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Для меню */
+.menu {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    font: normal bold 18px Arial, Verdana, Helvetica;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.menu-item li {
+    padding-right: 100px;
+}
+
+.menu-item a {
+    padding: 26px;
+    text-decoration: none;
+    color: #2E4555;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.menu-item a:hover {
+    color: #507692;
+}
+
+
+/* ################################################################################################### */
+
+/* Бургер меню */
+.hamburger-menu {
+    display: none;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 100;
+}
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #204977;
+    z-index: 10;
+}
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #2D64A1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menu__item:hover {
+    background-color: #023c80;
+}
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    transition-duration: .25s;
+}
+.menu__box {
+    transition-duration: .25s;
+}
+.menu__item {
+    transition-duration: .25s;
+}
+/* ################################################################################################### */
+
+/* Main - основная часть */
+main{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* Заголовок */
+.zagolovok{
+    position: absolute;
+    width: 800px;
+    height: 70px;
+    margin-left: 150px;
+    top: 290px;
+    font: normal bold 18px Arial, Verdana, Helvetica;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #2E4555;
+    
+}
+
+/* Главная картинка */
+.glav_img{
+    position: absolute;
+    width: 1620px;
+    height: 790px;
+    margin-left: 150px;
+    top: 420px;
+    border-radius: 65px;
+}
+
+/* блоки после картинки */
+.block_1_img{
+    position: absolute;
+    width: 526px;
+    height: 431px;
+    margin-left: 287px;
+    top: 1310px;
+    border-radius: 65px;
+}
+
+.block_1_text{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    max-width: 800px;
+    height: 431px;
+    margin-left: 970px;
+    top: 1310px;
+    font: normal bold 18px Arial, Verdana, Helvetica;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #2E4555;
+    word-wrap: break-word;
+}
+
+.block_2_img{
+    position: absolute;
+    width: 526px;
+    height: 431px;
+    margin-left: 287px;
+    top: 1781px;
+    border-radius: 65px;
+}
+.block_2_text{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 794px;
+    height: 431px;
+    margin-left: 970px;
+    top: 1781px;
+    font: normal bold 18px Arial, Verdana, Helvetica;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #2E4555;
+    word-wrap: break-word;
+}
+
+
+/* Подвал :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+footer {
+    background-color:#2D64A1 ;
+    width: 1920px;
+    height: 439px;
+    left: 0px;
+    margin-top: 2282px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_left {
+    margin-right: 157px;
+    margin-bottom: 325px;
+}
+
+.footer_right {
+    display: flex;
+}
+
+.footer_img {
+    width: 390px;
+    height: 70.58px;
+}
+
+.main_footer {
+    justify-content: center;
+    padding-top: 40px;
+
+    display: flex;
+    height: 399px;
+
+}
+
+.text_right_footer {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 135px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.text_right_footer a:hover {
+    color: #fdc62f;
+}
+
+.text_right_footer1 a:hover {
+    color: #fdc62f;
+}
+
+.text_right_footer2 a:hover {
+    color: #fdc62f;
+}
+
+.text_right_footer1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.text_right_footer2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 138px;
+    cursor: pointer;
+    margin-top: 0px;
+    padding-right: 134px;
+}
+
+.img_group {
+    width: 55px;
+    height: 55px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.imgs_footer {
+    display: flex;
+    height: 55px;
+}
+
+.decor {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    padding-top: 10px;
+}
+
+.links {
+    display: flex;
+}
+
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */

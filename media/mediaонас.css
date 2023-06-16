@@ -1,0 +1,248 @@
+@media(max-width:1440px) {
+
+    header {
+        width: auto;
+    }
+
+    .main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .block_left img {
+        padding-left: 50px;
+    }
+
+    .block_right {
+        padding-left: 650px;
+    }
+
+    .block_r_text {
+        display: none;
+    }
+
+    .header_down {
+        width: 1440px;
+    }
+
+    .menu-item li {
+        padding-right: 10px;
+    }
+
+    .header_down {
+        display: flex;
+        height: 83px;
+        justify-content: space-between;
+    }
+
+    /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+    .footer_right {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 340px;
+        display: block;
+    }
+
+    .imgs_footer {
+        display: flex;
+        height: 55px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .footer_left {
+        display: none;
+    }
+
+    .main_footer {
+        padding-right: 100px;
+        display: flex;
+        height: 10;
+        margin-left: 0;
+
+    }
+
+    .text_right_footer1 {
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .text_right_footer {
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding-right: 20px;
+    }
+
+    .text_right_footer2 {
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .link {
+        display: flex;
+        margin-bottom: 10px;
+
+    }
+
+    /********************************************************************/
+    .main {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 1440px;
+    }
+
+    .ded{
+        width: 1280px;
+    }
+    .text{
+        padding-left: 30px;
+        font-size: 24px;
+        margin-right: 80px;
+
+    }
+    .card {
+        display: flex;
+        justify-content:space-between;
+        padding-bottom: 60px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    header {
+        width: auto;
+    }
+
+    .hamburger-menu {
+        display: block;
+        
+
+    }
+
+    .block_left {
+        padding-left: 20px;
+        width: 10px;
+        height: 120px;
+    }
+
+    .block_right {
+        display: none;
+    }
+   
+
+    .header_down {
+        display: none;
+    }
+    .header_top{
+        max-width: 500px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo2 {
+
+        display: inline;
+    }
+/****************************************************************************************************/
+
+    .footer_right {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 340px;
+        display: block;
+    }
+
+    .imgs_footer {
+        display: flex;
+        height: 55px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .footer_left {
+        display: none;
+    }
+
+    .main_footer {
+        padding-right: 5px;
+        display: flex;
+        height: 10;
+        margin-left: 0;
+
+    }
+
+    .text_right_footer1 {
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .text_right_footer {
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding-right: 20px;
+    }
+
+    .text_right_footer2 {
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .link {
+        display: flex;
+        margin-bottom: 10px;
+
+    }
+
+    /******************************************************************************/
+    .main {
+        padding-left: 10px;
+        padding-right: 5px;
+        max-width: 425px;
+    }
+    .card {
+        display: flex;
+        padding-bottom: 200px;
+        flex-direction: column;
+    
+    }
+
+    .ded{
+        display: none;
+    }
+    .zagalovok {
+        font-size: 18px;
+        padding-left: 10px;
+    
+    }
+    .text {
+        padding-left: 10px;}
+    
+
+}
